@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-2df4da7f8b5f4e667ae3d8dfbd5808d840db5c05.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/build/intermediates/exploded-aar/com.andreabaccega/android-form-edittext/1.0.5/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="529ad965ecbdd6e85335e0d90a61606cdcbdb488"/>
+    <item
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-473df91f3b607e23275402e41e578a2733717cd5.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="af64527b748983a75de9c0756e9768b56b240a49"/>
+    <item
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-6cd56ee32be24ff5980d7d2ede614102396fda6b.jar"
+        jar="/Volumes/Project/android-sdk-macosx/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156"/>
+
+</pre-dex-items>

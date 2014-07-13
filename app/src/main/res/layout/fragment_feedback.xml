@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:whatever="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/backfed"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+
+    <com.andreabaccega.widget.FormEditText
+            whatever:testErrorString="Salah!!! Gunakan Huruf [A-Z] "
+            whatever:emptyErrorString="Nama Tidak Boleh Kosong"
+            android:id="@+id/editTextNama"
+            whatever:testType="personFullName"
+            android:layout_marginTop="10dp"
+            android:padding="7dp"
+            android:background="@drawable/rounded_select"
+            android:paddingTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"  android:hint="@string/hint_nama" android:singleLine="true"/>
+
+    <com.andreabaccega.widget.FormEditText
+            whatever:testErrorString="Penulisan Email salah"
+            whatever:emptyErrorString="Email Tidak Boleh Kosong"
+            android:id="@+id/editTextEmail"
+            whatever:testType="email"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Email Kamu"
+            android:padding="7dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"  android:singleLine="true"/>
+
+    <com.andreabaccega.widget.FormEditText
+            whatever:emptyErrorString="Tidak Boleh Kosong"
+            whatever:testType="nocheck"
+            android:background="@drawable/rounded_select"
+            android:id="@+id/editTextSaran"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:ems="150"
+            android:gravity="left|top"
+            android:hint="Tulis kritik dan saranmu disini"
+            android:inputType="textMultiLine|textCapSentences"
+            android:padding="7dip"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:textSize="20sp" android:layout_gravity="center"/>
+    <Button
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="@string/submit"
+            android:id="@+id/buttonFeedBack" android:layout_gravity="right|center_vertical"
+            />
+</LinearLayout>

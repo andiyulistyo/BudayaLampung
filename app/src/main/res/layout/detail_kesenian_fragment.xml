@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="#2f2e2c"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:gravity="center">
+            <LinearLayout android:id="@+id/layoutImageKesenian"
+                          android:paddingLeft="10dp"
+                          android:paddingRight="10dp"
+                          android:paddingTop="10dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="fill_parent">
+
+                <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageViewDetailKesenian"
+                        layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_below="@id/layoutImageKesenian"
+                          android:paddingLeft="10dp"
+                          android:paddingRight="10dp"
+                          android:paddingTop="10dp"
+                          android:id="@+id/layoutcenter"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:orientation="vertical">
+
+                <TextView android:id="@+id/textViewImageTitleKesenian"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textSize="18dp"
+                          android:gravity="center"
+                          android:textStyle="bold"
+                          android:textColor="#fff"/>
+
+                <WebView
+                         android:id="@+id/webview"
+                         android:background="#2f2e2c"
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent" />
+
+                <!--<TextView android:id="@+id/textViewDeskDetailKesenian"-->
+                          <!--android:paddingLeft="10dp"-->
+                          <!--android:layout_width="match_parent"-->
+                          <!--android:layout_height="wrap_content"-->
+                          <!--android:textColor="#9c9a9b"/>-->
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

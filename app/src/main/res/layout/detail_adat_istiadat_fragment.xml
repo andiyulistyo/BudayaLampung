@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="#2f2e2c"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:gravity="center">
+
+            <LinearLayout android:id="@+id/layoutImageAdatIstiadat"
+                          android:paddingLeft="10dp"
+                          android:paddingRight="10dp"
+                          android:paddingTop="10dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="fill_parent" android:layout_alignParentLeft="true"
+                          android:layout_marginLeft="0dp" android:layout_alignParentTop="true"
+                          android:layout_marginTop="0dp">
+
+                <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageViewDetailAdatIstiadat"
+                        layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_below="@id/layoutImageAdatIstiadat"
+                          android:paddingLeft="10dp"
+                          android:paddingRight="10dp"
+                          android:paddingTop="10dp"
+                          android:id="@+id/layoutcenter"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:orientation="vertical" android:layout_alignParentLeft="true"
+                          android:layout_marginLeft="0dp" android:layout_alignParentTop="true"
+                          android:layout_marginTop="8dp">
+
+                <TextView android:id="@+id/textViewImageTitleDetailAdatIstiadat"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textSize="18dp"
+                          android:gravity="center"
+                          android:textStyle="bold"
+                          android:textColor="#fff"/>
+
+                <WebView
+                         android:id="@+id/webviewDetailAdatIstiadat"
+                         android:background="#2f2e2c"
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
