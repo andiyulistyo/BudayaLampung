@@ -1,9 +1,5 @@
 package com.souttab.budayalampung;
 
-import com.souttab.budayalampung.adapter.MenuLeftListAdapater;
-import com.souttab.budayalampung.database.SqliteHelper;
-import com.souttab.budayalampung.entity.EntityID;
-import com.souttab.budayalampung.util.CrashException;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -13,10 +9,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
+import com.souttab.budayalampung.adapter.MenuLeftListAdapater;
+import com.souttab.budayalampung.database.CopyDatabase;
+import com.souttab.budayalampung.entity.EntityID;
 
-import java.io.IOException;
+import java.sql.SQLException;
 
 public class MainActivity extends SherlockFragmentActivity {
 
@@ -30,7 +30,7 @@ public class MainActivity extends SherlockFragmentActivity {
     private KesenianFragment kesenianFragment = new KesenianFragment();
     private MakananFragment makananFragment = new MakananFragment();
     private FeedbackFragment feedbackFragment = new FeedbackFragment();
-    private AksaraFragment aksaraFragment = new AksaraFragment() ;
+    private AksaraFragment aksaraFragment = new AksaraFragment();
 
     private ActionBarDrawerToggle drawerToggle;
     private MenuLeftListAdapater menuLeftListAdapater;
@@ -49,19 +49,19 @@ public class MainActivity extends SherlockFragmentActivity {
         setContentView(R.layout.main);
         getSupportActionBar().setDisplayUseLogoEnabled(false);
 
+        //Thread.setDefaultUncaughtExceptionHandler(new CrashException(MainActivity.this));
+
         id = EntityID.getId();
 
-
-        Thread.setDefaultUncaughtExceptionHandler(new CrashException(MainActivity.this));
-
-
-        SqliteHelper sqliteHelper = new SqliteHelper(MainActivity.this);
+        CopyDatabase copyDatabase = new CopyDatabase(MainActivity.this);
 
         try {
-            sqliteHelper.createDataBase();
-        } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            copyDatabase.createdDatabase();
+            copyDatabase.openDatabase();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
+
 
         title = new String[]{ // title for navigation
                 "Ruwa Jurai",

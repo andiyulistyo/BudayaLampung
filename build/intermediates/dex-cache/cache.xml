@@ -2,14 +2,8 @@
 <pre-dex-items>
 
     <item
-        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-2df4da7f8b5f4e667ae3d8dfbd5808d840db5c05.jar"
-        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/build/intermediates/exploded-aar/com.andreabaccega/android-form-edittext/1.0.5/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="529ad965ecbdd6e85335e0d90a61606cdcbdb488"/>
-    <item
-        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-473df91f3b607e23275402e41e578a2733717cd5.jar"
-        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/classes.jar"
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-39206c8473b05db191ee7ec6e2f55ccc31ba7819.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/classes.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="af64527b748983a75de9c0756e9768b56b240a49"/>
@@ -19,5 +13,17 @@
         jumboMode="false"
         revision="19.1.0"
         sha1="44ec51e9d395a47aab135e5e1b556c0007442156"/>
+    <item
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/sqliteassethelper-2.0.1-cdfaaa341a767c321f8c63c84b2c1ed0c3569bd0.jar"
+        jar="/Users/andiyulistyo/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.sqliteasset/sqliteassethelper/2.0.1/d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f/sqliteassethelper-2.0.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f"/>
+    <item
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-5a574a53c85a66d520ac9d7186b351db26a4bb4a.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/com.andreabaccega/android-form-edittext/1.0.5/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="529ad965ecbdd6e85335e0d90a61606cdcbdb488"/>
 
 </pre-dex-items>

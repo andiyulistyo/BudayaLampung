@@ -32,18 +32,18 @@ public class DatabaseUtil {
     private static final String _TABLE_AKSARA = "aksara";
 
     private  SQLiteDatabase database;
-    private SqliteHelper sqliteHelper;
+    private CopyDatabase copyDatabase;
 
 
     String nama, deskripsi;
     byte[] image;
 
     public DatabaseUtil(Context context) {
-        sqliteHelper = new SqliteHelper(context);
+        copyDatabase = new CopyDatabase(context);
     }
 
     public void open() { // open database and allow to write data
-        database = sqliteHelper.getReadableDatabase();
+        database = copyDatabase.getReadableDatabase();
     }
 
     public void close() { // close database connection
