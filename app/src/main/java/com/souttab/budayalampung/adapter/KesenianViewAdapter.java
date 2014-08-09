@@ -53,7 +53,7 @@ public class KesenianViewAdapter extends BaseAdapter {
     }
 
     class ViewHol {
-        TextView textViewNama, textViewDeskri;
+        TextView textViewNama;
         ImageView imageView;
     }
 
@@ -67,7 +67,6 @@ public class KesenianViewAdapter extends BaseAdapter {
             view = layoutInflater.inflate(R.layout.list_item_kesenian_fragment, viewGroup, false);
 
             viewHol.imageView = (ImageView) view.findViewById(R.id.imageViewItemKesenian);
-            viewHol.textViewDeskri = (TextView) view.findViewById(R.id.textViewDeskKesenian);
             viewHol.textViewNama = (TextView) view.findViewById(R.id.textViewNamaKesenian);
 
             view.setTag(viewHol);
@@ -75,14 +74,6 @@ public class KesenianViewAdapter extends BaseAdapter {
             viewHol  = (ViewHol) view.getTag();
         }
 
-        String desk = entityList.get(position).getDeskription();
-
-        if (desk.length() > 100 ) {
-           desk = desk.substring(0, 99) + " ....";
-        }
-
-
-        viewHol.textViewDeskri.setText(desk);
         viewHol.textViewNama.setText(entityList.get(position).getTitle());
         viewHol.imageView.setImageBitmap(entityList.get(position).getGambar());
 

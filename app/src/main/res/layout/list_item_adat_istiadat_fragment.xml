@@ -26,13 +26,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher" />
 
-        <!--<TextView-->
-        <!---->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:gravity="center_horizontal"-->
-        <!--android:text="Foreground" />-->
-
         <TextView
             android:id="@+id/textViewNamaAdatIstiadat"
             style="@style/ImageTitleAdatIstiadat"/>
