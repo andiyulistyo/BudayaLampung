@@ -48,7 +48,7 @@ public class FeedbackFragment extends SherlockFragment {
 
         button = (Button) view.findViewById(R.id.buttonFeedBack);
         editTextEmail = (FormEditText) view.findViewById(R.id.editTextEmail);
-        editTextKoment = (FormEditText) view.findViewById(R.id.editTextSaran);;
+        editTextKoment = (FormEditText) view.findViewById(R.id.editTextSaran);
         editTextNama = (FormEditText) view.findViewById(R.id.editTextNama);
 
         clearEditText();
@@ -72,7 +72,7 @@ public class FeedbackFragment extends SherlockFragment {
                     email = editTextEmail.getText().toString();
                     komen = editTextKoment.getText().toString();
 
-                    new SendToServer().execute();
+//                    new SendToServer().execute();
                     clearEditText();
                 }
             }
