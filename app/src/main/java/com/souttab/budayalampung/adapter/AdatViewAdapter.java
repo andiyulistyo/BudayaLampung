@@ -51,7 +51,7 @@ public class AdatViewAdapter extends BaseAdapter {
     }
 
     class ViewHold {
-        TextView textViewNama, textViewDeskrip;
+        TextView textViewNama;
         ImageView imageView;
     }
 
@@ -65,7 +65,6 @@ public class AdatViewAdapter extends BaseAdapter {
             view = layoutInflater.inflate(R.layout.list_item_adat_istiadat_fragment, viewGroup, false);
 
             hold.imageView = (ImageView) view.findViewById(R.id.imageViewItemAdatIstiadat);
-            hold.textViewDeskrip = (TextView) view.findViewById(R.id.textViewDeskAdatIstiadat);
             hold.textViewNama = (TextView) view.findViewById(R.id.textViewNamaAdatIstiadat);
 
             view.setTag(hold);
@@ -73,16 +72,8 @@ public class AdatViewAdapter extends BaseAdapter {
             hold = (ViewHold) view.getTag();
         }
 
-        String des = (entityList.get(position).getDeskription());
-
-        if (des.length() > 90) {
-            des = des.substring(0, 90) + "...";
-        }
-
-        hold.textViewDeskrip.setText(des);
         hold.imageView.setImageBitmap(entityList.get(position).getGambar());
         hold.textViewNama.setText(entityList.get(position).getTitle());
-
 
         return view;
     }

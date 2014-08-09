@@ -2,6 +2,12 @@
 <pre-dex-items>
 
     <item
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-026e619a129660ef67c01bdb48293d5e36b6b4f2.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/com.github.amlcurran.showcaseview/library/5.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8b3d9a7b348d8bcfb4d740dfaf70bc374cdae9d6"/>
+    <item
         dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-39206c8473b05db191ee7ec6e2f55ccc31ba7819.jar"
         jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/classes.jar"
         jumboMode="false"

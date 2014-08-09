@@ -1,67 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:paddingLeft="15dp"
-                android:paddingTop="5dp"
-                android:paddingRight="15dp"
-                android:paddingBottom="5dp"
-                android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="5dp">
 
+    <LinearLayout
+        android:id="@+id/layoutHeaderAdat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-    <LinearLayout android:id="@+id/layoutHeaderAdatIstiadatItem"
-                  android:orientation="vertical"
-                  android:layout_width="match_parent"
-                  android:background="@drawable/dropshadow"
-                  android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageViewItemAdatIstiadat"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
 
-        <ImageView android:id="@+id/imageViewItemAdatIstiadat"
-                   android:paddingLeft="10dp"
-                   android:paddingRight="10dp"
-                   android:paddingTop="10dp"
-                   android:paddingBottom="10dp"
-                   android:layout_width="fill_parent"
-                   android:contentDescription="dsfsdf"
-                   android:layout_height="wrap_content"
-                   android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_marginLeft="8dp"
-                   android:layout_alignParentTop="true" android:layout_marginTop="4dp"/>
+        <!--<TextView-->
+        <!---->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="Foreground" />-->
 
-        <LinearLayout android:layout_below="@id/layoutHeaderAdatIstiadatItem"
-                      android:id="@+id/layoutCenterAdatIstiadat"
-                      android:layout_width="match_parent"
-                      android:background="#3468af"
-                      android:layout_height="match_parent"
-                      android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewNamaAdatIstiadat"
+            style="@style/ImageTitleAdatIstiadat"/>
 
-            <TextView android:id="@+id/textViewNamaAdatIstiadat"
-                      android:paddingLeft="10dp"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:textSize="18dp"
-                      android:textStyle="bold"
-                      android:textColor="#fff"
-
-                    />
-
-            <TextView android:id="@+id/textViewDeskAdatIstiadat"
-                      android:paddingLeft="10dp"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:textColor="#9c9a9b"
-                      android:textAlignment="gravity"/>
-        </LinearLayout>
-
-        <LinearLayout android:layout_below="@id/layoutCenterAdatIstiadat"
-                      android:layout_width="match_parent"
-                      android:layout_height="match_parent">
-
-            <TextView android:id="@+id/buttonMore"
-                      style="@style/ImageTitleAdatIstiadat"
-                      android:text="BACA LEBIH LANJUT"/>
-
-        </LinearLayout>
     </LinearLayout>
-
-
 </RelativeLayout>

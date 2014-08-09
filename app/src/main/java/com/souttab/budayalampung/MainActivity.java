@@ -12,6 +12,8 @@ import android.widget.ListView;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
+import com.github.amlcurran.showcaseview.ShowcaseView;
+import com.github.amlcurran.showcaseview.targets.ViewTarget;
 import com.souttab.budayalampung.adapter.MenuLeftListAdapater;
 import com.souttab.budayalampung.database.CopyDatabase;
 import com.souttab.budayalampung.entity.EntityID;
@@ -43,6 +45,7 @@ public class MainActivity extends SherlockFragmentActivity {
     // for select id in navigation menu
     private int id;
 
+    ShowcaseView showcaseView;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +53,13 @@ public class MainActivity extends SherlockFragmentActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(false);
 
         //Thread.setDefaultUncaughtExceptionHandler(new CrashException(MainActivity.this));
-
+//        ViewTarget viewTarget = new ViewTarget(drawerToggle.hashCode(), this);
+//        showcaseView = new  ShowcaseView.Builder(this)
+//                .setTarget(viewTarget)
+//                .setContentTitle("Show case example")
+//                .setContentText("sdfalsdmflksmfasdfsdf")
+//                .hideOnTouchOutside().singleShot(1)
+//                .build();
         id = EntityID.getId();
 
         CopyDatabase copyDatabase = new CopyDatabase(MainActivity.this);
