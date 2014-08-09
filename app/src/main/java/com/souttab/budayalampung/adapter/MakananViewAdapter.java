@@ -63,7 +63,6 @@ public class MakananViewAdapter extends BaseAdapter {
 
             holder.textViewNama = (TextView) view.findViewById(R.id.textViewNama);
             holder.imageView = (ImageView) view.findViewById(R.id.imageViewIcon);
-            holder.textViewDeskripsi = (TextView) view.findViewById(R.id.textViewDesk);
             view.setTag(holder);
 
         } else {
@@ -71,17 +70,14 @@ public class MakananViewAdapter extends BaseAdapter {
 
         }
 
-        String des = makananList.get(position).getDeskription();
-
         // set result
         holder.textViewNama.setText(makananList.get(position).getTitle());
         holder.imageView.setImageBitmap(makananList.get(position).getGambar());
-        holder.textViewDeskripsi.setText(des.substring(0, 60) + "...");
         return view;
     }
 
     private class ViewHolder {
-        TextView textViewNama, textViewDeskripsi;
+        TextView textViewNama;
         ImageView imageView;
     }
 
