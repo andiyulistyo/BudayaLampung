@@ -69,7 +69,7 @@ public class DatabaseUtil {
                 image = cursor.getBlob(cursor.getColumnIndex("gambar"));
                 nama = cursor.getString(cursor.getColumnIndex("nama"));
 
-                entity.setGambar(UtilityImage.getImage(image));
+                entity.setGambar(image);
                 entity.setTitle(nama);
                 entity.setDeskription(cursor.getString(cursor.getColumnIndex("deskripsi")));
 
@@ -103,7 +103,7 @@ public class DatabaseUtil {
                 nama = cursor.getString(cursor.getColumnIndex("nama_kesenian"));
                 deskripsi = cursor.getString(cursor.getColumnIndex("deskripsi"));
 
-                entity.setGambar(UtilityImage.getImage(image));
+                entity.setGambar(image);
                 entity.setDeskription(deskripsi);
                 entity.setTitle(nama);
 
@@ -137,7 +137,7 @@ public class DatabaseUtil {
                 nama = cursor.getString(cursor.getColumnIndex("nama_adat_istiadat"));
                 deskripsi = cursor.getString(cursor.getColumnIndex("deskripsi"));
 
-                entity.setGambar(UtilityImage.getImage(image));
+                entity.setGambar(image);
                 entity.setDeskription(deskripsi);
                 entity.setTitle(nama);
 
@@ -171,7 +171,7 @@ public class DatabaseUtil {
                 nama = cursor.getString(cursor.getColumnIndex("nama_bahasa"));
                 deskripsi = cursor.getString(cursor.getColumnIndex("deskripsi"));
 
-                entity.setGambar(UtilityImage.getImage(image));
+                entity.setGambar(image);
                 entity.setDeskription(deskripsi);
                 entity.setTitle(nama);
 
@@ -205,7 +205,7 @@ public class DatabaseUtil {
                 nama = cursor.getString(cursor.getColumnIndex("nama"));
                 deskripsi = cursor.getString(cursor.getColumnIndex("deskripsi"));
 
-                entity.setGambar(UtilityImage.getImage(image));
+                entity.setGambar(image);
                 entity.setDeskription(deskripsi);
                 entity.setTitle(nama);
 

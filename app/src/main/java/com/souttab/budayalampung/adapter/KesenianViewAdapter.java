@@ -1,6 +1,8 @@
 package com.souttab.budayalampung.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,6 +57,7 @@ public class KesenianViewAdapter extends BaseAdapter {
     class ViewHol {
         TextView textViewNama;
         ImageView imageView;
+        Bitmap bitmap;
     }
 
     @Override
@@ -74,8 +77,11 @@ public class KesenianViewAdapter extends BaseAdapter {
             viewHol  = (ViewHol) view.getTag();
         }
 
+        viewHol.bitmap = BitmapFactory.decodeByteArray(entityList.get(position).getGambar(), 0, entityList.get(position).getGambar().length);
+
+        viewHol.imageView.setImageBitmap(Bitmap.createScaledBitmap(viewHol.bitmap, 200, 200, false));
+
         viewHol.textViewNama.setText(entityList.get(position).getTitle());
-        viewHol.imageView.setImageBitmap(entityList.get(position).getGambar());
 
         return view;
     }

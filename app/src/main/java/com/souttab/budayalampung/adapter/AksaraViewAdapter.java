@@ -1,6 +1,8 @@
 package com.souttab.budayalampung.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,8 +68,11 @@ public class AksaraViewAdapter extends BaseAdapter {
             view.setTag(holder);
         } else holder = (ViewHolder) view.getTag();
 
+
+        holder.bitmap = BitmapFactory.decodeByteArray(entityList.get(position).getGambar(), 0, entityList.get(position).getGambar().length);
+
         // set result data from array list
-        holder.imageViewGambar.setImageBitmap(entityList.get(position).getGambar());
+        holder.imageViewGambar.setImageBitmap(Bitmap.createScaledBitmap(holder.bitmap, 50, 50, false));
         holder.textViewNama.setText(entityList.get(position).getTitle());
 
 
@@ -75,6 +80,7 @@ public class AksaraViewAdapter extends BaseAdapter {
     }
 
     class ViewHolder {
+        Bitmap bitmap;
         TextView textViewNama;
         ImageView imageViewGambar;
     }

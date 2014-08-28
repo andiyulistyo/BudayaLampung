@@ -1,6 +1,8 @@
 package com.souttab.budayalampung.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -71,14 +73,17 @@ public class MakananViewAdapter extends BaseAdapter {
         }
 
         // set result
+        holder.bitmap = BitmapFactory.decodeByteArray(makananList.get(position).getGambar(), 0, makananList.get(position).getGambar().length);
+
+        holder.imageView.setImageBitmap(Bitmap.createScaledBitmap(holder.bitmap, 120, 120, false));
         holder.textViewNama.setText(makananList.get(position).getTitle());
-        holder.imageView.setImageBitmap(makananList.get(position).getGambar());
         return view;
     }
 
     private class ViewHolder {
         TextView textViewNama;
         ImageView imageView;
+        Bitmap bitmap;
     }
 
 

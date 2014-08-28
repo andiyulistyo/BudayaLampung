@@ -1,6 +1,8 @@
 package com.souttab.budayalampung.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +55,7 @@ public class BahasaViewAdapter extends BaseAdapter {
     class ViewHol {
         TextView textViewDeskri;
         ImageView imageView;
+        Bitmap bitmap;
     }
 
     @Override
@@ -64,7 +67,7 @@ public class BahasaViewAdapter extends BaseAdapter {
 
             view = layoutInflater.inflate(R.layout.list_item_bahasa_fragment, viewGroup, false);
 
-            hol.textViewDeskri = (TextView) view.findViewById(R.id.textViewDeskBahasa);
+//            hol.textViewDeskri = (TextView) view.findViewById(R.id.textViewDeskBahasa);
             hol.imageView = (ImageView) view.findViewById(R.id.imageViewItemBahasa);
 
             view.setTag(hol);
@@ -72,10 +75,10 @@ public class BahasaViewAdapter extends BaseAdapter {
             hol = (ViewHol) view.getTag();
         }
 
-        hol.imageView.setImageBitmap(entityList.get(position).getGambar());
-        hol.textViewDeskri.setText(entityList.get(position).getDeskription());
+        hol.bitmap = BitmapFactory.decodeByteArray(entityList.get(position).getGambar(), 0, entityList.get(position).getGambar().length);
+        hol.imageView.setImageBitmap(Bitmap.createScaledBitmap(hol.bitmap, 200, 200, false));
+//        hol.textViewDeskri.setText(entityList.get(position).getDeskription());
 
         return view;
-
     }
 }

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:paddingLeft="15dp"
-                android:paddingTop="5dp"
-                android:paddingRight="15dp"
-                android:paddingBottom="5dp"
-                android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp">
 
     <LinearLayout
         android:id="@+id/layoutHeaderKesenianItem"
@@ -20,8 +18,8 @@
 
         <ImageView
             android:id="@+id/imageViewIcon"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_marginBottom="5dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher" />

@@ -2,11 +2,17 @@
 <pre-dex-items>
 
     <item
-        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-026e619a129660ef67c01bdb48293d5e36b6b4f2.jar"
-        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/com.github.amlcurran.showcaseview/library/5.0.0/classes.jar"
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-fa12ed25e046872ef6a1b1e47f8cb20e09a1b8af.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/mobi.parchment/parchment/1.6.7/classes.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="8b3d9a7b348d8bcfb4d740dfaf70bc374cdae9d6"/>
+        sha1="e4c8f6155160f9dc1d66d4251da54388a14728b7"/>
+    <item
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-85fd1f228c42a0aeea9f3135b454936746ff3e41.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/BudayaLampung/devsmartAndroid/unspecified/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="7cb10d2d6d18309128b3cafc83454a4c0f398b80"/>
     <item
         dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-39206c8473b05db191ee7ec6e2f55ccc31ba7819.jar"
         jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/classes.jar"
@@ -14,22 +20,46 @@
         revision="19.1.0"
         sha1="af64527b748983a75de9c0756e9768b56b240a49"/>
     <item
-        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-6cd56ee32be24ff5980d7d2ede614102396fda6b.jar"
-        jar="/Volumes/Project/android-sdk-macosx/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/CWAC-SackOfViewsAdapter-68b4f99458ad8cf7f2acd06f3bc205e6dcabda2f.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/BudayaLampung/devsmartAndroid/unspecified/libs/CWAC-SackOfViewsAdapter.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="44ec51e9d395a47aab135e5e1b556c0007442156"/>
+        sha1="c514a41a4d82b75c692e161557fb3a493964794f"/>
     <item
-        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/sqliteassethelper-2.0.1-cdfaaa341a767c321f8c63c84b2c1ed0c3569bd0.jar"
-        jar="/Users/andiyulistyo/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.sqliteasset/sqliteassethelper/2.0.1/d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f/sqliteassethelper-2.0.1.jar"
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-7672531ebd64944b7300b86c00357a6e2b026705.jar"
+        jar="/Volumes/Project/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f"/>
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-47f5979b6447542437066f817a9170b0b741fa25.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-026e619a129660ef67c01bdb48293d5e36b6b4f2.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/com.github.amlcurran.showcaseview/library/5.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8b3d9a7b348d8bcfb4d740dfaf70bc374cdae9d6"/>
+    <item
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-5d54a65d263aab94463e1bb5581c2f18ecfbee9b.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/it.sephiroth.android.library.horizontallistview/library/1.2.1/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3ade637050fc8fe0097119eed60cf74d1a8fe044"/>
     <item
         dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-5a574a53c85a66d520ac9d7186b351db26a4bb4a.jar"
         jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/com.andreabaccega/android-form-edittext/1.0.5/classes.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="529ad965ecbdd6e85335e0d90a61606cdcbdb488"/>
+    <item
+        dex="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/pre-dexed/debug/classes-c0723310a0a3b5047013dba5507951eb10ff15ca.jar"
+        jar="/Users/andiyulistyo/AndroidStudioProjects/BudayaLampung/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
 
 </pre-dex-items>

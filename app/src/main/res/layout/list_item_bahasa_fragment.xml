@@ -1,59 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:paddingLeft="15dp"
-                android:paddingTop="5dp"
-                android:paddingRight="15dp"
-                android:paddingBottom="5dp"
-                android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp">
 
 
-    <LinearLayout android:id="@+id/layoutHeaderBahasa"
-                  android:orientation="vertical"
-                  android:layout_width="match_parent"
-                  android:background="@drawable/dropshadow"
-                  android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layoutHeaderBahasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-        <ImageView android:id="@+id/imageViewItemBahasa"
-                   android:paddingLeft="10dp"
-                   android:paddingRight="10dp"
-                   android:paddingTop="10dp"
-                   android:paddingBottom="10dp"
-                   android:layout_width="fill_parent"
-                   android:contentDescription="dsfsdf"
-                   android:layout_height="wrap_content"
-                   android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_marginLeft="8dp"
-                   android:layout_alignParentTop="true" android:layout_marginTop="4dp"/>
-
-        <LinearLayout android:layout_below="@id/layoutHeaderBahasa"
-                      android:id="@+id/layoutCenterBahasa"
-                      android:layout_width="match_parent"
-                      android:background="#3468af"
-                      android:layout_height="match_parent"
-                      android:orientation="vertical">
-
-            <TextView android:id="@+id/textViewNamaBahasa"
-                      android:paddingLeft="10dp"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:textSize="18dp"
-                      android:textStyle="bold"
-                      android:textColor="#fff"
-
-                    />
-
-            <TextView android:id="@+id/textViewDeskBahasa"
-                      android:paddingLeft="10dp"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:textColor="#9c9a9b"
-                      android:textAlignment="gravity"/>
-        </LinearLayout>
-
+        <ImageView
+            android:id="@+id/imageViewItemBahasa"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="dsfsdf" />
 
     </LinearLayout>
-
-
 </RelativeLayout>

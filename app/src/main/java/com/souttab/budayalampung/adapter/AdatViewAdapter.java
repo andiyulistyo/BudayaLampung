@@ -1,6 +1,8 @@
 package com.souttab.budayalampung.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +55,7 @@ public class AdatViewAdapter extends BaseAdapter {
     class ViewHold {
         TextView textViewNama;
         ImageView imageView;
+        Bitmap bitmap;
     }
 
     @Override
@@ -72,7 +75,10 @@ public class AdatViewAdapter extends BaseAdapter {
             hold = (ViewHold) view.getTag();
         }
 
-        hold.imageView.setImageBitmap(entityList.get(position).getGambar());
+        // for resize image
+        hold.bitmap = BitmapFactory.decodeByteArray(entityList.get(position).getGambar(), 0, entityList.get(position).getGambar().length);
+
+        hold.imageView.setImageBitmap(Bitmap.createScaledBitmap(hold.bitmap, 200, 200, false));
         hold.textViewNama.setText(entityList.get(position).getTitle());
 
         return view;

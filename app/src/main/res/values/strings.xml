@@ -3,4 +3,9 @@
     <string name="app_name">Budaya Lampung</string>
     <string name="hint_nama">Nama Kamu</string>
     <string name="hint_komentar">Tulis Kritik dan Saran Disini</string><string name="submit">Kirim</string>
+    <string name="adat_istiadat">Adat Istiadat</string>
+    <string name="aksara">Aksara</string>
+    <string name="bahasa">Bahasa</string>
+    <string name="Kesenian">Kesenian</string>
+    <string name="makanan">Makanan</string>
 </resources>

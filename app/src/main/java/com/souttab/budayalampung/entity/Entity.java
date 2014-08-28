@@ -1,7 +1,5 @@
 package com.souttab.budayalampung.entity;
 
-import android.graphics.Bitmap;
-
 /**
  * Created with IntelliJ IDEA for
  * <p/>
@@ -18,7 +16,7 @@ import android.graphics.Bitmap;
 public class Entity {
 
     private String title;
-    private Bitmap gambar;
+    private byte[] gambar;
     private String deskription;
 
     public String getTitle() {
@@ -29,11 +27,11 @@ public class Entity {
         this.title = title;
     }
 
-    public Bitmap getGambar() {
+    public byte[] getGambar() {
         return gambar;
     }
 
-    public void setGambar(Bitmap gambar) {
+    public void setGambar(byte[] gambar) {
         this.gambar = gambar;
     }
 
